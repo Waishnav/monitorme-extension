@@ -1,0 +1,14 @@
+{
+  "name": "darshan-chrome-extension",
+  "version": "1.0.0",
+  "description": "This extension is using the [chrome.devtools.recorder API](https://developer.chrome.com/docs/extensions/reference/devtools_recorder/).",
+  "main": "DevToolsPlugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright-chrome-recorder": "^1.0.2"
+  }
+}
