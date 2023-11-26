@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const view = await chrome.devtools.recorder.createView(
-  /* name= */ 'CoffeeTest',
-  /* pagePath= */ 'Replay.html'
+  /* name= */ 'Darshan',
+  /* pagePath= */ 'Redirect.html'
 );
 
 let latestRecording;
@@ -16,6 +16,7 @@ view.onHidden.addListener(() => {
 });
 
 export class RecorderPlugin {
+  // we want to use the recording shown in view
   replay(recording) {
     // Share the data with the view.
     latestRecording = recording;
@@ -27,5 +28,5 @@ export class RecorderPlugin {
 /* eslint-disable no-undef */
 chrome.devtools.recorder.registerRecorderExtensionPlugin(
   new RecorderPlugin(),
-  /* name=*/ 'CoffeeTest'
+  /* name=*/ 'Darshan'
 );

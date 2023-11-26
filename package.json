@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nightwatch/chrome-recorder": "^0.2.2",
     "playwright-chrome-recorder": "^1.0.2"
   }
 }
